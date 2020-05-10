@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .b {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @DateTime.Now;
+        <br />
+        @{ 
+            string isim = "Negan";
+            <span>@isim</span>
+            int sonuc = 4 + 5;
+            <br />
+        }
+        <b>@sonuc</b>
+        <br />
+        <b class="b"><i><u>@isim.ToUpper()</u></i></b>
+    </div>
+</body>
+</html>
+@* Razer Syntax: Bir dil değildir.
+   MVC Form için geliştirilen bir söz dizimidir.
+   View içerisinde C# komutları syntax ile yazılır.
+   MVC Form'da server komutları yazabileceğimiz tag @ veya @{c# komutları} şeklindedir.
+   Yazılan C# komutları çalışma zamanında Razor View Engine ile yorumlanır.
+   .Html ile C# komutları ayrılarak client'a(istemciye) sadece html komutları iletilir.
+*@
